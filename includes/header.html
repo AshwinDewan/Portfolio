@@ -1,0 +1,83 @@
+<header
+    class="sticky top-0 z-50 flex flex-col whitespace-nowrap border-b border-solid border-neutral-200 dark:border-[#283039] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+    <div class="flex items-center justify-between px-4 md:px-6 lg:px-12 py-3">
+        <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+            <div class="size-10 rounded-lg bg-primary flex items-center justify-center text-white shadow-lg">
+                <span class="material-symbols-outlined text-[24px]">terminal</span>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-lg font-bold tracking-tight text-gray-900 dark:text-white font-mono">~/dev_portfolio</span>
+                <!-- <span class="text-[10px] font-mono text-primary uppercase tracking-widest">firmware_sys_v3</span> -->
+            </div>
+        </div>
+
+        <div class="flex items-center gap-8">
+            <div class="hidden md:flex items-center gap-8">
+                <a class="nav-link text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="embedded_dev_portfolio_homepage.html" data-page="home">Home</a>
+                <a class="nav-link text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="about_me_section.html" data-page="about">About Me</a>
+                <a class="nav-link text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="projects_showcase.html" data-page="projects">Projects</a>
+                <a class="nav-link text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="technical_skills_section.html" data-page="skills">Skills</a>
+                <a class="nav-link text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="contact_me_section.html" data-page="contact">Contact</a>
+            </div>
+
+            <button
+                class="hidden lg:flex h-10 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white hover:bg-blue-600 transition-all shadow-md shadow-primary/20">
+                Resume
+            </button>
+            <button id="mobileMenuBtn"
+                class="md:hidden size-10 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="hidden md:hidden flex-col gap-2 px-4 pb-4 border-t border-neutral-200 dark:border-[#283039]">
+        <a class="nav-link-mobile text-sm font-medium leading-normal hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-white/5"
+            href="embedded_dev_portfolio_homepage.html" data-page="home">Home</a>
+        <a class="nav-link-mobile text-sm font-medium leading-normal hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-white/5"
+            href="about_me_section.html" data-page="about">About Me</a>
+        <a class="nav-link-mobile text-sm font-medium leading-normal hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-white/5"
+            href="projects_showcase.html" data-page="projects">Projects</a>
+        <a class="nav-link-mobile text-sm font-medium leading-normal hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-white/5"
+            href="technical_skills_section.html" data-page="skills">Skills</a>
+        <a class="nav-link-mobile text-sm font-medium leading-normal hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-white/5"
+            href="contact_me_section.html" data-page="contact">Contact</a>
+        <button
+            class="mt-2 h-10 flex items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white hover:bg-blue-600 transition-all shadow-md shadow-primary/20">
+            Hire Me
+        </button>
+    </div>
+</header>
+<script>
+    // Mobile menu toggle
+    (function () {
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
+
+        // Set active navigation link based on current page
+        const currentPage = document.body.getAttribute('data-page');
+        if (currentPage) {
+            const navLinks = document.querySelectorAll('.nav-link, .nav-link-mobile');
+            navLinks.forEach(link => {
+                if (link.getAttribute('data-page') === currentPage) {
+                    link.classList.remove('hover:text-primary');
+                    link.classList.add('text-primary');
+                }
+            });
+        }
+    })();
+</script>

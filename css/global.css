@@ -1,0 +1,85 @@
+/* Global Styles for Portfolio */
+
+/* Custom scrollbar for terminal/technical feel */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #101922;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d3b4a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #137fec;
+}
+
+/* Base Utility Classes */
+.layout-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .layout-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .layout-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* Background Patterns */
+.circuit-bg {
+    background-image: radial-gradient(#3b4754 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, #2d3b4a 1px, transparent 1px),
+        linear-gradient(to bottom, #2d3b4a 1px, transparent 1px);
+}
+
+.hex-bg {
+    background-image: radial-gradient(#283039 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Animations */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-cursor-blink {
+    animation: blink 1s step-end infinite;
+}
+
+.blinking-cursor::after {
+    content: '▋';
+    animation: blink 1s step-end infinite;
+    color: #137fec;
+    margin-left: 2px;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact - DevPortfolio</title>
+    <!-- Common Assets -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+</head>
+
+<body data-page="contact"
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white overflow-x-hidden">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+        <!-- Navigation -->
+        <div data-include="includes/header.html"></div>
+        <main class="flex-grow w-full flex flex-col">
+            <div class="layout-container py-10">
+                <!-- Header Section -->
+                <div class="mb-12">
+                    <div class="flex items-center gap-2 text-primary mb-2">
+                        <span class="material-symbols-outlined animate-pulse text-sm">circle</span>
+                        <span class="text-xs font-mono tracking-widest uppercase">System Online // Ready for
+                            Input</span>
+                    </div>
+                    <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-[-0.033em] mb-4">
+                        > INITIALIZE_CONNECTION
+                    </h1>
+                    <p class="text-text-secondary text-lg max-w-[720px] font-normal leading-relaxed">
+                        // Currently open for new projects in firmware, RTOS, and IoT. <br />
+                        // Initialize a handshake via the form below or use direct protocols.
+                    </p>
+                </div>
+                <!-- Split Grid Content -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+                    <!-- Left Column: Protocols (Contact Info) -->
+                    <div class="lg:col-span-5 flex flex-col gap-8">
+                        <div
+                            class="p-6 rounded-xl border border-border-dark bg-surface-dark relative overflow-hidden group">
+                            <div
+                                class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                <span class="material-symbols-outlined text-6xl">hub</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold mb-6 flex items-center gap-2">
+                                <span class="text-primary">//</span> Connection Protocols
+                            </h3>
+                            <div class="flex flex-col gap-4">
+                                <!-- Email Item -->
+                                <a class="flex items-start gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors border border-transparent hover:border-border-dark group/item"
+                                    href="#">
+                                    <div
+                                        class="bg-background-dark p-2 rounded-md text-primary group-hover/item:text-white transition-colors border border-border-dark">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-text-secondary font-mono mb-1">protocol:
+                                            SMTP</span>
+                                        <span class="text-white font-medium">dev@example.com</span>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined ml-auto text-text-secondary group-hover/item:text-primary opacity-0 group-hover/item:opacity-100 transition-all">arrow_outward</span>
+                                </a>
+                                <!-- GitHub Item -->
+                                <a class="flex items-start gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors border border-transparent hover:border-border-dark group/item"
+                                    href="#">
+                                    <div
+                                        class="bg-background-dark p-2 rounded-md text-primary group-hover/item:text-white transition-colors border border-border-dark">
+                                        <span class="material-symbols-outlined">code</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-text-secondary font-mono mb-1">repo: public</span>
+                                        <span class="text-white font-medium">github.com/embedded-dev</span>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined ml-auto text-text-secondary group-hover/item:text-primary opacity-0 group-hover/item:opacity-100 transition-all">arrow_outward</span>
+                                </a>
+                                <!-- LinkedIn Item -->
+                                <a class="flex items-start gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors border border-transparent hover:border-border-dark group/item"
+                                    href="#">
+                                    <div
+                                        class="bg-background-dark p-2 rounded-md text-primary group-hover/item:text-white transition-colors border border-border-dark">
+                                        <span class="material-symbols-outlined">badge</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="text-xs text-text-secondary font-mono mb-1">network:
+                                            professional</span>
+                                        <span class="text-white font-medium">linkedin.com/in/developer</span>
+                                    </div>
+                                    <span
+                                        class="material-symbols-outlined ml-auto text-text-secondary group-hover/item:text-primary opacity-0 group-hover/item:opacity-100 transition-all">arrow_outward</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Map / Location Widget -->
+                        <div
+                            class="relative h-48 w-full rounded-xl overflow-hidden border border-border-dark bg-surface-dark group">
+                            <img alt="Dark aesthetic city skyline representing Chicago"
+                                class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity"
+                                data-location="Chicago, IL"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ZSGGt5OFIJSnxYHLJZ7PBjuVfIK8HFmhYHFrujLcrZVJZq1T41V2mIh0idOHOKDeWRvPUoBBSFKPAj_Iv6RGTCXVDZgABDxWHJ01tR81yIbpPaGZCJh6ClQVttFdZxpCajlljRAYxMuQOBZmX8W0v8XR8u1PzABsbxej8k3rMuAvPlToV4n0fSAzdnOwUSSVhOCzEMHNtp7moXWfL4xEjmqvl-y-RY51IhBYZYJQ2H2JCSID0bU1TIbPLWb_jxWmOnp-ntuFS5o" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent">
+                            </div>
+                            <div class="absolute bottom-4 left-4">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                                    <span class="text-white font-bold tracking-wide">CHICAGO, IL</span>
+                                </div>
+                                <p class="text-text-secondary text-xs font-mono">lat: 41.8781° N / long: 87.6298° W
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Contact Form -->
+                    <div class="lg:col-span-7">
+                        <div
+                            class="bg-surface-dark border border-border-dark rounded-xl p-6 md:p-8 shadow-2xl relative">
+                            <!-- Decorative terminal header -->
+                            <div
+                                class="absolute top-0 left-0 w-full h-8 bg-[#283039] rounded-t-xl border-b border-border-dark flex items-center px-4 gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                                <div class="ml-auto text-[10px] font-mono text-text-secondary opacity-70">bash
+                                    --contact-form.sh</div>
+                            </div>
+                            <form id="contactForm" class="flex flex-col gap-6 mt-6">
+                                <label class="flex flex-col w-full gap-2">
+                                    <p class="text-primary text-sm font-mono font-medium">char *name</p>
+                                    <input id="nameInput"
+                                        class="w-full rounded-lg bg-background-dark border border-border-dark text-white placeholder-text-secondary/50 focus:border-primary focus:ring-1 focus:ring-primary h-12 px-4 transition-all font-sans"
+                                        placeholder="Enter identifier..." type="text" required />
+                                </label>
+                                <label class="flex flex-col w-full gap-2">
+                                    <p class="text-primary text-sm font-mono font-medium">struct Purpose</p>
+                                    <div class="relative">
+                                        <select id="purposeSelect"
+                                            class="w-full appearance-none rounded-lg bg-background-dark border border-border-dark text-white focus:border-primary focus:ring-1 focus:ring-primary h-12 px-4 transition-all font-sans pr-10 cursor-pointer">
+                                            <option>Project Inquiry</option>
+                                            <option>Job Opportunity</option>
+                                            <option>Technical Consultation</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <div
+                                            class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-text-secondary">
+                                            <span class="material-symbols-outlined">expand_more</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="flex flex-col w-full gap-2">
+                                    <p class="text-primary text-sm font-mono font-medium">void message(char
+                                        *content)</p>
+                                    <textarea id="messageInput"
+                                        class="w-full rounded-lg bg-background-dark border border-border-dark text-white placeholder-text-secondary/50 focus:border-primary focus:ring-1 focus:ring-primary min-h-[160px] p-4 transition-all font-sans resize-y"
+                                        placeholder="Write your message packet data here..." required></textarea>
+                                </label>
+                                <div class="flex items-center justify-between pt-2">
+                                    <div
+                                        class="hidden md:flex items-center gap-2 text-xs text-text-secondary font-mono">
+                                        <span class="material-symbols-outlined text-sm">lock</span>
+                                        <span>SSL_ENCRYPTED</span>
+                                    </div>
+                                    <button id="submitBtn"
+                                        class="w-full md:w-auto bg-primary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-all transform active:scale-95 flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(19,127,236,0.3)] hover:shadow-[0_0_25px_rgba(19,127,236,0.5)]"
+                                        type="button">
+                                        <span class="material-symbols-outlined">send</span>
+                                        <span>EXECUTE_TRANSMISSION</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <script>
+                                document.getElementById('submitBtn').addEventListener('click', function () {
+                                    const name = document.getElementById('nameInput').value.trim();
+                                    const purpose = document.getElementById('purposeSelect').value;
+                                    const message = document.getElementById('messageInput').value.trim();
+
+                                    if (!name || !message) {
+                                        alert('Please fill in your name and message before sending.');
+                                        return;
+                                    }
+
+                                    // Construct the email body with name at the top
+                                    // Use %0D%0A for line breaks in mailto (works better across email clients)
+                                    const emailBody = `Name: ${name}%0D%0A%0D%0A${message}`;
+
+                                    // Create mailto link - encode everything except the line breaks we already added
+                                    const mailtoLink = `mailto:dev@example.com?subject=${encodeURIComponent(purpose)}&body=${emailBody}`;
+
+                                    // Open email client
+                                    window.location.href = mailtoLink;
+                                });
+                            </script>
+                        </div>
+                        <!-- Compiler Output decoration -->
+                        <div
+                            class="mt-4 p-4 rounded-lg bg-black/30 border border-white/5 font-mono text-xs md:text-sm text-text-secondary">
+                            <p><span class="text-green-500">➜</span> <span class="text-blue-400">~</span> gcc
+                                contact_form.c -o send_message</p>
+                            <p class="opacity-50 mt-1">Waiting for user input...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div data-include="includes/footer.html"></div>
+    </div>
+    <script src="js/include.js"></script>
+</body>
+
+</html>

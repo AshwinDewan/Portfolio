@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Embedded Developer Portfolio</title>
+    <!-- Common Assets -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+</head>
+
+<body data-page="home"
+    class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white transition-colors duration-200">
+    <!-- Navigation -->
+    <div data-include="includes/header.html"></div>
+    <!-- Main Content Wrapper -->
+    <main class="relative pt-16 min-h-screen flex flex-col">
+        <!-- Hero Section -->
+        <section class="relative w-full flex flex-col justify-center py-20 lg:py-32 overflow-hidden">
+            <!-- Background Decoration -->
+            <div class="absolute inset-0 z-0 circuit-bg opacity-20 pointer-events-none"></div>
+            <div class="layout-container z-10 w-full">
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+                    <!-- Text Content -->
+                    <div class="flex-1 flex flex-col gap-6 max-w-2xl">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+                            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                            <span class="text-xs font-mono font-bold text-primary">SYSTEM READY</span>
+                        </div>
+                        <h1 class="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+                            Building the <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Firmware</span>
+                            of the Future.
+                        </h1>
+                        <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-xl">
+                            Embedded Systems Engineer specializing in RTOS, bare-metal C, and custom PCB design.
+                            Bridging the gap between silicon and software.
+                        </p>
+                        <div class="flex flex-wrap gap-4 mt-2">
+                            <a class="flex items-center justify-center h-12 px-6 rounded-lg bg-primary text-white font-bold text-sm tracking-wide hover:bg-blue-600 transition-all shadow-[0_4px_14px_0_rgba(19,127,236,0.39)]"
+                                href="projects_showcase.html">
+                                View Projects
+                            </a>
+                            <a class="flex items-center justify-center h-12 px-6 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white font-bold text-sm tracking-wide transition-all"
+                                href="contact_me_section.html">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Terminal Visual -->
+                    <div class="flex-1 w-full max-w-xl">
+                        <div
+                            class="relative rounded-xl overflow-hidden bg-[#1e1e1e] border border-[#3b4754] shadow-2xl font-mono text-sm leading-relaxed group hover:border-primary/50 transition-colors duration-300">
+                            <!-- Terminal Header -->
+                            <div
+                                class="flex items-center justify-between px-4 py-2 bg-[#252526] border-b border-[#3b4754]">
+                                <div class="flex gap-2">
+                                    <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                                    <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+                                </div>
+                                <div class="text-gray-400 text-xs">visitor@portfolio:~</div>
+                                <div class="w-10"></div> <!-- Spacer -->
+                            </div>
+                            <!-- Terminal Body -->
+                            <div class="p-6 text-gray-300 h-[320px] overflow-y-auto">
+                                <div class="mb-4">
+                                    <span class="text-[#98c379]">visitor@portfolio</span>:<span
+                                        class="text-[#61afef]">~</span>$ ./welcome.sh
+                                </div>
+                                <div class="mb-4 text-white">
+                                    <p>&gt; Initializing portfolio modules...</p>
+                                    <p>&gt; Loading kernel modules... <span class="text-[#98c379]">[OK]</span></p>
+                                    <p>&gt; Mounting filesystems... <span class="text-[#98c379]">[OK]</span></p>
+                                    <p>&gt; Starting main loop...</p>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="text-[#c678dd]">const</span> <span
+                                        class="text-[#e5c07b]">engineer</span> = {<br />
+                                      name: <span class="text-[#98c379]">"Ashwin Dewan"</span>,<br />
+                                      role: <span class="text-[#98c379]">"Embedded Systems Engineer"</span>,<br />
+                                      stack: [<span class="text-[#98c379]">"C/C++"</span>, <span
+                                        class="text-[#98c379]">"Python"</span>, <span
+                                        class="text-[#98c379]">"JAVA"</span>],<br />
+                                      status: <span class="text-[#98c379]">"Open to work"</span><br />
+                                    };
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-[#98c379]">visitor@portfolio</span>:<span
+                                        class="text-[#61afef]">~</span>$ <span
+                                        class="w-2.5 h-5 ml-2 bg-gray-400 animate-cursor-blink inline-block align-middle"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reflection/Glow underneath -->
+                        <div
+                            class="absolute -bottom-10 left-10 right-10 h-20 bg-primary/20 blur-[60px] rounded-full -z-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Section -->
+        <section class="border-y border-gray-200 dark:border-[#283039] bg-white dark:bg-[#151c24]">
+            <div class="layout-container py-8">
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-200 dark:divide-[#283039] text-center">
+                    <div class="px-4">
+                        <div class="text-3xl font-bold text-gray-900 dark:text-white font-mono">3+</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Years Experience</div>
+                    </div>
+                    <div class="px-4">
+                        <div class="text-3xl font-bold text-gray-900 dark:text-white font-mono">20+</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Projects Shipped</div>
+                    </div>
+                    <div class="px-4">
+                        <div class="text-3xl font-bold text-gray-900 dark:text-white font-mono">100%</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Code Coverage</div>
+                    </div>
+                    <div class="px-4">
+                        <div class="text-3xl font-bold text-gray-900 dark:text-white font-mono">24/7</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tech Stack / Capabilities -->
+        <section class="py-20 bg-background-light dark:bg-background-dark" id="skills">
+            <div class="layout-container">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Core Capabilities</h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl">
+                        Comprehensive toolset for full-cycle embedded development, from schematic capture to production
+                        firmware.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div
+                        class="group p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] hover:border-primary/50 transition-all hover:shadow-lg">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">memory</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Firmware Development</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                            Expertise in low-level driver development, RTOS integration, and power optimization.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">C/C++</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">FreeRTOS</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">Zephyr</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">ARM
+                                Cortex-M</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="group p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] hover:border-primary/50 transition-all hover:shadow-lg">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">developer_board</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Hardware Design</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                            Multi-layer PCB layout, signal integrity analysis, and component selection for mass
+                            production.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">Altium
+                                Designer</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">KiCad</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">SPICE</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">EMI/EMC</span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="group p-6 rounded-xl bg-white dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] hover:border-primary/50 transition-all hover:shadow-lg">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">bug_report</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Debugging &amp; Tools</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                            Proficient with logic analyzers, oscilloscopes, and automated testing pipelines.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">JTAG/SWD</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">GDB</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">Git
+                                CI/CD</span>
+                            <span
+                                class="px-2 py-1 text-xs font-mono rounded bg-gray-100 dark:bg-[#283039] text-gray-700 dark:text-gray-300">Python
+                                Scripting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="py-20 bg-white dark:bg-[#151c24]" id="projects">
+            <div class="layout-container">
+                <div class="flex items-end justify-between mb-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Selected works demonstrating hardware-software
+                            integration.</p>
+                    </div>
+                    <a class="hidden md:flex items-center gap-1 text-primary hover:text-blue-400 font-medium transition-colors"
+                        href="#">
+                        View all repositories <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <!-- Project 1 -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-background-light dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] flex flex-col md:flex-row">
+                        <div class="md:w-2/5 h-64 md:h-auto overflow-hidden relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 md:hidden">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Close up of a green printed circuit board with chips and electronic components"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGj1mVjs1eOAorHJgWG9vJrKeL6GEZdDBWtbyw-Km0XMg-r197HT4Tm8WJ0Hp6Ao1yTOvS4TjzZfjqCTD4HGXA3rw4COwy-vVDlSFdXQJeIV79Fwu_gP9xuW7FWdMAdsJX9PgmuG6QoZtRL22iZ0ZmEznR35qJlOlGKIJPh0eZ5aCFSf85-WCq05-_U_B4LaPo80roEV_uCPyJxftEjY4XNzU7a_JmJonw9R4RNZQ3B59HDZ8kPa0dSpHAFZwgWtC_hHy3rhwKBw" />
+                        </div>
+                        <div class="flex-1 p-8 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Industrial IoT Sensor
+                                        Node</h3>
+                                    <p class="text-sm font-mono text-primary mt-1">STM32L4 • LoRaWAN • FreeRTOS</p>
+                                </div>
+                                <a class="p-2 rounded-full bg-gray-200 dark:bg-[#283039] text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                                    href="#">
+                                    <span class="material-symbols-outlined">open_in_new</span>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+                                Designed a low-power sensor node for environmental monitoring in industrial settings.
+                                Features include 5-year battery life, custom PCB antenna design, and a robust
+                                over-the-air (OTA) update mechanism.
+                            </p>
+                            <div
+                                class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 font-mono border-t border-gray-200 dark:border-[#3b4754] pt-4">
+                                <div class="flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                                    Deployed
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-base">layers</span>
+                                    4-Layer PCB
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-background-light dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] flex flex-col md:flex-row-reverse">
+                        <div class="md:w-2/5 h-64 md:h-auto overflow-hidden relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 md:hidden">
+                            </div>
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Macro photography of a modern computer chip processor with colorful lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCifBfznV7k-hGiOEM9WaW31yJrSAV5AvIxpeGlcTDP7ofrto3t0KFkwlqSu9FnQS2yRm-gSnPDwFCXCNoKgPTad1gdcDA_GkDmeZj1SDWpqxV-RhjQDRLIfVY-PZoIW3WvovVpVcJlK7ccKFYQRxawhe4iBnwKOPnx7roS0AvDgERBxqJ6yA6321RVFDqnFUd83NUSNQ8CuLr99t6nETW1C-oYIcDEAmUMZ_YeVMXvS1d4FrbXKvutG1JxxEkgG95cr59XkWKOgjA" />
+                        </div>
+                        <div class="flex-1 p-8 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">BLDC Motor Controller
+                                    </h3>
+                                    <p class="text-sm font-mono text-primary mt-1">C++ • Altium • Field Oriented Control
+                                    </p>
+                                </div>
+                                <a class="p-2 rounded-full bg-gray-200 dark:bg-[#283039] text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                                    href="#">
+                                    <span class="material-symbols-outlined">open_in_new</span>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6 flex-grow">
+                                High-performance brushless DC motor driver capable of 500W output. Implemented
+                                sensorless FOC algorithm for smooth torque control at low speeds.
+                            </p>
+                            <div
+                                class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 font-mono border-t border-gray-200 dark:border-[#3b4754] pt-4">
+                                <div class="flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                                    Prototype
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-base">bolt</span>
+                                    High Power
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div data-include="includes/footer.html"></div>
+    </main>
+    <script src="js/include.js"></script>
+</body>
+
+</html>

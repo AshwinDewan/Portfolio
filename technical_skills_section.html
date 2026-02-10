@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Technical Skills - Embedded Developer Portfolio</title>
+    <!-- Common Assets -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+</head>
+
+<body data-page="skills"
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <div data-include="includes/header.html"></div>
+    <!-- Main Content -->
+    <main class="flex-grow w-full flex flex-col">
+        <div class="layout-container py-8 md:py-12">
+            <!-- Section Header & Terminal Prompt -->
+            <div class="mb-8 md:mb-12">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="material-symbols-outlined text-primary">memory</span>
+                    <h2 class="text-white text-[28px] md:text-[32px] font-bold leading-tight tracking-[-0.015em]">System
+                        Diagnostics</h2>
+                </div>
+                <div
+                    class="bg-[#0d1216] border border-surface-border rounded-lg p-4 font-mono text-sm md:text-base shadow-lg relative overflow-hidden group">
+                    <!-- Decorative subtle glow -->
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none">
+                    </div>
+                    <div class="flex flex-col gap-2 relative z-10">
+                        <p class="text-slate-400">
+                            <span class="text-green-500">user@embedded-portfolio</span>:<span
+                                class="text-blue-400">~</span>$ ./list_competencies.sh --verbose --visual
+                        </p>
+                        <p class="text-white/90">
+                            &gt; Initializing hardware abstraction layer... <span class="text-green-500">OK</span><br />
+                            &gt; Loading firmware modules... <span class="text-green-500">OK</span><br />
+                            &gt; scanning_skills_matrix... found 4 categories.<br />
+                            &gt; Displaying output:
+                            <span class="blinking-cursor"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bento Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+                <!-- Block 1: Firmware & Languages (Main Focus) -->
+                <div
+                    class="col-span-1 md:col-span-2 lg:col-span-7 bg-surface-dark border border-surface-border rounded-xl p-6 md:p-8 flex flex-col shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <span class="material-symbols-outlined text-9xl text-white">code</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-6 z-10">
+                        <span class="material-symbols-outlined text-primary">terminal</span>
+                        <h3 class="text-white text-xl font-bold tracking-tight">Firmware &amp; Languages</h3>
+                    </div>
+                    <div class="flex flex-col gap-5 z-10">
+                        <!-- C Skill -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-end">
+                                <span class="text-white font-medium flex items-center gap-2"><span
+                                        class="text-xs text-slate-500 font-mono">0x01</span> C / Embedded C</span>
+                                <span class="text-primary font-mono text-xs">98% [EXPERT]</span>
+                            </div>
+                            <div class="h-2 w-full bg-[#111418] rounded-full overflow-hidden">
+                                <div class="h-full bg-primary w-[98%] shadow-[0_0_10px_rgba(19,127,236,0.5)]"></div>
+                            </div>
+                        </div>
+                        <!-- C++ Skill -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-end">
+                                <span class="text-white font-medium flex items-center gap-2"><span
+                                        class="text-xs text-slate-500 font-mono">0x02</span> C++ (14/17)</span>
+                                <span class="text-primary/80 font-mono text-xs">85% [ADVANCED]</span>
+                            </div>
+                            <div class="h-2 w-full bg-[#111418] rounded-full overflow-hidden">
+                                <div class="h-full bg-primary/80 w-[85%]"></div>
+                            </div>
+                        </div>
+                        <!-- Python Skill -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-end">
+                                <span class="text-white font-medium flex items-center gap-2"><span
+                                        class="text-xs text-slate-500 font-mono">0x03</span> Python
+                                    (Scripting/Test)</span>
+                                <span class="text-primary/60 font-mono text-xs">75% [PROFICIENT]</span>
+                            </div>
+                            <div class="h-2 w-full bg-[#111418] rounded-full overflow-hidden">
+                                <div class="h-full bg-primary/60 w-[75%]"></div>
+                            </div>
+                        </div>
+                        <!-- Other Languages Chips -->
+                        <div class="mt-4 pt-4 border-t border-surface-border">
+                            <p class="text-xs text-slate-400 mb-3 uppercase tracking-wider font-bold">Secondary
+                                Architectures</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1.5 bg-[#111418] border border-surface-border text-slate-300 text-sm rounded font-mono hover:border-primary/50 transition-colors">ARM
+                                    Assembly</span>
+                                <span
+                                    class="px-3 py-1.5 bg-[#111418] border border-surface-border text-slate-300 text-sm rounded font-mono hover:border-primary/50 transition-colors">Rust
+                                    (Embedded)</span>
+                                <span
+                                    class="px-3 py-1.5 bg-[#111418] border border-surface-border text-slate-300 text-sm rounded font-mono hover:border-primary/50 transition-colors">Bash</span>
+                                <span
+                                    class="px-3 py-1.5 bg-[#111418] border border-surface-border text-slate-300 text-sm rounded font-mono hover:border-primary/50 transition-colors">Make/CMake</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block 2: Hardware & MCUs -->
+                <div
+                    class="col-span-1 md:col-span-1 lg:col-span-5 bg-surface-dark border border-surface-border rounded-xl p-6 md:p-8 flex flex-col shadow-sm hex-bg relative">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-dark pointer-events-none">
+                    </div>
+                    <div class="flex items-center gap-3 mb-6 relative z-10">
+                        <span class="material-symbols-outlined text-primary">developer_board</span>
+                        <h3 class="text-white text-xl font-bold tracking-tight">Hardware &amp; MCUs</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 relative z-10">
+                        <!-- Item -->
+                        <div
+                            class="bg-[#111418] p-3 rounded border border-surface-border flex items-center gap-3 hover:border-primary/40 transition-colors group">
+                            <div
+                                class="size-8 rounded-full bg-surface-border flex items-center justify-center text-xs font-bold text-white group-hover:bg-primary group-hover:text-white transition-colors">
+                                ST</div>
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">STM32</span>
+                                <span class="text-[10px] text-slate-400 font-mono">ARM Cortex-M</span>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div
+                            class="bg-[#111418] p-3 rounded border border-surface-border flex items-center gap-3 hover:border-primary/40 transition-colors group">
+                            <div
+                                class="size-8 rounded-full bg-surface-border flex items-center justify-center text-xs font-bold text-white group-hover:bg-primary group-hover:text-white transition-colors">
+                                ES</div>
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">ESP32</span>
+                                <span class="text-[10px] text-slate-400 font-mono">Wi-Fi/BLE</span>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div
+                            class="bg-[#111418] p-3 rounded border border-surface-border flex items-center gap-3 hover:border-primary/40 transition-colors group">
+                            <div
+                                class="size-8 rounded-full bg-surface-border flex items-center justify-center text-xs font-bold text-white group-hover:bg-primary group-hover:text-white transition-colors">
+                                TI</div>
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">MSP430</span>
+                                <span class="text-[10px] text-slate-400 font-mono">Low Power</span>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div
+                            class="bg-[#111418] p-3 rounded border border-surface-border flex items-center gap-3 hover:border-primary/40 transition-colors group">
+                            <div
+                                class="size-8 rounded-full bg-surface-border flex items-center justify-center text-xs font-bold text-white group-hover:bg-primary group-hover:text-white transition-colors">
+                                AV</div>
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">AVR</span>
+                                <span class="text-[10px] text-slate-400 font-mono">8-bit</span>
+                            </div>
+                        </div>
+                        <!-- Item -->
+                        <div
+                            class="bg-[#111418] p-3 rounded border border-surface-border flex items-center gap-3 hover:border-primary/40 transition-colors group col-span-2">
+                            <span
+                                class="material-symbols-outlined text-slate-400 text-lg group-hover:text-primary transition-colors">settings_input_component</span>
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">PCB Design &amp; Schematic</span>
+                                <span class="text-[10px] text-slate-400 font-mono">KiCad, Altium Designer Basics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block 3: Protocols & Interfaces -->
+                <div
+                    class="col-span-1 md:col-span-1 lg:col-span-5 bg-surface-dark border border-surface-border rounded-xl p-6 md:p-8 flex flex-col shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-symbols-outlined text-primary">hub</span>
+                        <h3 class="text-white text-xl font-bold tracking-tight">Protocols</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <!-- Category: Serial -->
+                        <div>
+                            <span
+                                class="text-xs font-mono text-primary mb-2 block border-b border-surface-border pb-1 w-fit">SERIAL_COMM</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary-200 text-sm rounded border border-primary/20">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> UART
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary-200 text-sm rounded border border-primary/20">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> I2C
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary-200 text-sm rounded border border-primary/20">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> SPI
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary-200 text-sm rounded border border-primary/20">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> CAN/FD
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Category: Network/Wireless -->
+                        <div>
+                            <span
+                                class="text-xs font-mono text-primary mb-2 block border-b border-surface-border pb-1 w-fit">NET_STACK</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#111418] text-slate-300 text-sm rounded border border-surface-border">
+                                    MQTT
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#111418] text-slate-300 text-sm rounded border border-surface-border">
+                                    TCP/IP (LwIP)
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#111418] text-slate-300 text-sm rounded border border-surface-border">
+                                    BLE 5.0
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#111418] text-slate-300 text-sm rounded border border-surface-border">
+                                    USB CDC/HID
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block 4: Tools & OS -->
+                <div
+                    class="col-span-1 md:col-span-2 lg:col-span-7 bg-surface-dark border border-surface-border rounded-xl p-6 md:p-8 flex flex-col shadow-sm relative overflow-hidden">
+                    <!-- Decorative background graphic -->
+                    <div class="absolute -right-10 -bottom-10 opacity-5 rotate-12">
+                        <span class="material-symbols-outlined text-[180px] text-white">settings</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-6 relative z-10">
+                        <span class="material-symbols-outlined text-primary">build</span>
+                        <h3 class="text-white text-xl font-bold tracking-tight">Environment &amp; OS</h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+                        <!-- RTOS -->
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base">schedule</span> RTOS
+                            </h4>
+                            <div class="bg-[#111418] rounded-lg p-3 border border-surface-border">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-white text-sm">FreeRTOS</span>
+                                    <span class="text-xs text-primary font-mono">TASK_SCHEDULING</span>
+                                </div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-white text-sm">Zephyr</span>
+                                    <span class="text-xs text-slate-500 font-mono">DEVICE_TREE</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-white text-sm">Bare Metal</span>
+                                    <span class="text-xs text-slate-500 font-mono">INTERRUPTS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Linux/Tools -->
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base">laptop_chromebook</span> Linux &amp;
+                                DevOps
+                            </h4>
+                            <div
+                                class="bg-[#111418] rounded-lg p-3 border border-surface-border flex flex-wrap gap-2 content-start h-full">
+                                <span
+                                    class="px-2 py-1 bg-surface-dark text-xs text-white rounded border border-surface-border flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-sm">terminal</span> Embedded Linux
+                                </span>
+                                <span
+                                    class="px-2 py-1 bg-surface-dark text-xs text-white rounded border border-surface-border">Yocto
+                                    Project</span>
+                                <span
+                                    class="px-2 py-1 bg-surface-dark text-xs text-white rounded border border-surface-border">Git/Github</span>
+                                <span
+                                    class="px-2 py-1 bg-surface-dark text-xs text-white rounded border border-surface-border">Docker</span>
+                                <span
+                                    class="px-2 py-1 bg-surface-dark text-xs text-white rounded border border-surface-border">GDB/JTAG</span>
+                                <span
+                                    class="px-2 py-1 bg-surface-dark text-xs text-white rounded border border-surface-border">Logic
+                                    Analyzer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-include="includes/footer.html"></div>
+    </main>
+    <script src="js/include.js"></script>
+</body>
+
+</html>
