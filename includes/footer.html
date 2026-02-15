@@ -1,13 +1,55 @@
 <!-- Bottom Status Bar -->
 <div
-    class="mt-6 flex flex-col md:flex-row justify-between items-center text-xs font-mono text-slate-500 border-t border-neutral-200 dark:border-[#283039] pt-4 pb-6 px-4 md:px-6 lg:px-12">
-    <div class="flex gap-4">
-        <span>MEMORY: 32GB OK</span>
-        <span>CPU: 8 CORES ACTIVE</span>
-    </div>
-    <div class="flex gap-4 mt-2 md:mt-0">
-        <span>UPTIME: 3Y 4M 12D</span>
-        <span class="flex items-center gap-1">STATUS: <div class="size-2 rounded-full bg-green-500 animate-pulse"></div>
-            ONLINE</span>
-    </div>
+  class="mt-6 flex flex-col md:flex-row justify-between items-center text-xs font-mono text-slate-500 border-t border-neutral-200 dark:border-[#283039] pt-4 pb-6 px-4 md:px-6 lg:px-12">
+
+  <div class="flex gap-4">
+    <span>MEMORY: 32GB OK</span>
+    <span>CPU: 8 CORES ACTIVE</span>
+  </div>
+
+  <div class="flex gap-4 mt-2 md:mt-0">
+    <span id="uptimeText">UPTIME: --</span>
+
+    <span class="flex items-center gap-1">
+      STATUS:
+      <div class="size-2 rounded-full bg-green-500 animate-pulse"></div>
+      ONLINE
+    </span>
+  </div>
 </div>
+
+<script>
+  function calculateUptime(startDateStr) {
+    const start = new Date(startDateStr);
+    const now = new Date();
+
+    let years = now.getFullYear() - start.getFullYear();
+    let months = now.getMonth() - start.getMonth();
+    let days = now.getDate() - start.getDate();
+
+    if (days < 0) {
+      months -= 1;
+      const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+      days += prevMonth.getDate();
+    }
+
+    if (months < 0) {
+      years -= 1;
+      months += 12;
+    }
+
+    return { years, months, days };
+  }
+
+  function updateUptime() {
+    const uptime = calculateUptime("2022-07-13T00:00:00");
+    document.getElementById("uptimeText").textContent =
+      `UPTIME: ${uptime.years}Y ${uptime.months}M ${uptime.days}D`;
+  }
+
+  // Update immediately
+  updateUptime();
+
+  // Update every hour (will refresh after midnight automatically)
+  setInterval(updateUptime, 60 * 60 * 1000);
+</script>

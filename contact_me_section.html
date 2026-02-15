@@ -58,7 +58,8 @@
                             <div class="flex flex-col gap-4">
                                 <!-- Email Item -->
                                 <a class="flex items-start gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors border border-transparent hover:border-border-dark group/item"
-                                    href="#">
+                                    href="mailto:zeakashwin@gmail.com?subject=Portfolio%20Contact%20-%20Ashwin%20Dewan&body=Hi%20Ashwin%2C%0A%0A"
+                                    target="_blank" rel="noopener noreferrer">
                                     <div
                                         class="bg-background-dark p-2 rounded-md text-primary group-hover/item:text-white transition-colors border border-border-dark">
                                         <span class="material-symbols-outlined">mail</span>
@@ -66,28 +67,29 @@
                                     <div class="flex flex-col">
                                         <span class="text-xs text-text-secondary font-mono mb-1">protocol:
                                             SMTP</span>
-                                        <span class="text-white font-medium">dev@example.com</span>
+                                        <span class="text-white font-medium">zeakashwin@gmail.com</span>
                                     </div>
                                     <span
                                         class="material-symbols-outlined ml-auto text-text-secondary group-hover/item:text-primary opacity-0 group-hover/item:opacity-100 transition-all">arrow_outward</span>
                                 </a>
                                 <!-- GitHub Item -->
                                 <a class="flex items-start gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors border border-transparent hover:border-border-dark group/item"
-                                    href="#">
+                                    href="https://github.com/AshwinDewan" target="_blank" rel="noopener noreferrer">
                                     <div
                                         class="bg-background-dark p-2 rounded-md text-primary group-hover/item:text-white transition-colors border border-border-dark">
                                         <span class="material-symbols-outlined">code</span>
                                     </div>
                                     <div class="flex flex-col">
                                         <span class="text-xs text-text-secondary font-mono mb-1">repo: public</span>
-                                        <span class="text-white font-medium">github.com/embedded-dev</span>
+                                        <span class="text-white font-medium">github.com/AshwinDewan</span>
                                     </div>
                                     <span
                                         class="material-symbols-outlined ml-auto text-text-secondary group-hover/item:text-primary opacity-0 group-hover/item:opacity-100 transition-all">arrow_outward</span>
                                 </a>
                                 <!-- LinkedIn Item -->
                                 <a class="flex items-start gap-4 p-3 rounded-lg hover:bg-white/5 transition-colors border border-transparent hover:border-border-dark group/item"
-                                    href="#">
+                                    href="https://www.linkedin.com/in/ashwin-dewan/" target="_blank"
+                                    rel="noopener noreferrer">
                                     <div
                                         class="bg-background-dark p-2 rounded-md text-primary group-hover/item:text-white transition-colors border border-border-dark">
                                         <span class="material-symbols-outlined">badge</span>
@@ -95,7 +97,7 @@
                                     <div class="flex flex-col">
                                         <span class="text-xs text-text-secondary font-mono mb-1">network:
                                             professional</span>
-                                        <span class="text-white font-medium">linkedin.com/in/developer</span>
+                                        <span class="text-white font-medium">linkedin.com/in/ashwin-dewan</span>
                                     </div>
                                     <span
                                         class="material-symbols-outlined ml-auto text-text-secondary group-hover/item:text-primary opacity-0 group-hover/item:opacity-100 transition-all">arrow_outward</span>
@@ -105,18 +107,20 @@
                         <!-- Map / Location Widget -->
                         <div
                             class="relative h-48 w-full rounded-xl overflow-hidden border border-border-dark bg-surface-dark group">
-                            <img alt="Dark aesthetic city skyline representing Chicago"
+                            <img alt="Dark aesthetic city skyline representing New Delhi"
                                 class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity"
-                                data-location="Chicago, IL"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ZSGGt5OFIJSnxYHLJZ7PBjuVfIK8HFmhYHFrujLcrZVJZq1T41V2mIh0idOHOKDeWRvPUoBBSFKPAj_Iv6RGTCXVDZgABDxWHJ01tR81yIbpPaGZCJh6ClQVttFdZxpCajlljRAYxMuQOBZmX8W0v8XR8u1PzABsbxej8k3rMuAvPlToV4n0fSAzdnOwUSSVhOCzEMHNtp7moXWfL4xEjmqvl-y-RY51IhBYZYJQ2H2JCSID0bU1TIbPLWb_jxWmOnp-ntuFS5o" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent">
-                            </div>
+                                data-location="New Delhi, IN"
+                                src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80" />
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent"></div>
+
                             <div class="absolute bottom-4 left-4">
                                 <div class="flex items-center gap-2 mb-1">
                                     <span class="material-symbols-outlined text-primary text-lg">location_on</span>
-                                    <span class="text-white font-bold tracking-wide">CHICAGO, IL</span>
+                                    <span class="text-white font-bold tracking-wide">NEW DELHI, IN</span>
                                 </div>
-                                <p class="text-text-secondary text-xs font-mono">lat: 41.8781° N / long: 87.6298° W
+                                <p class="text-text-secondary text-xs font-mono">
+                                    lat: 28.6139° N / long: 77.2090° E
                                 </p>
                             </div>
                         </div>
@@ -179,27 +183,41 @@
                                 </div>
                             </form>
                             <script>
-                                document.getElementById('submitBtn').addEventListener('click', function () {
-                                    const name = document.getElementById('nameInput').value.trim();
-                                    const purpose = document.getElementById('purposeSelect').value;
-                                    const message = document.getElementById('messageInput').value.trim();
+                                const form = document.getElementById("contactForm");
+                                const nameInput = document.getElementById("nameInput");
+                                const purposeSelect = document.getElementById("purposeSelect");
+                                const messageInput = document.getElementById("messageInput");
+
+                                form.addEventListener("submit", function (e) {
+                                    e.preventDefault();
+
+                                    const name = nameInput.value.trim();
+                                    const purpose = purposeSelect.value.trim();
+                                    const message = messageInput.value.trim();
 
                                     if (!name || !message) {
-                                        alert('Please fill in your name and message before sending.');
+                                        alert("Please fill in your name and message before sending.");
                                         return;
                                     }
 
-                                    // Construct the email body with name at the top
-                                    // Use %0D%0A for line breaks in mailto (works better across email clients)
-                                    const emailBody = `Name: ${name}%0D%0A%0D%0A${message}`;
+                                    const toEmail = "zeakashwin@gmail.com";
 
-                                    // Create mailto link - encode everything except the line breaks we already added
-                                    const mailtoLink = `mailto:dev@example.com?subject=${encodeURIComponent(purpose)}&body=${emailBody}`;
+                                    const subject = `Portfolio Contact - ${purpose}`;
 
-                                    // Open email client
+                                    const body =
+                                        `Hi Ashwin,\n\n` +
+                                        `Name: ${name}\n` +
+                                        `Purpose: ${purpose}\n\n` +
+                                        `Message:\n${message}\n\n` +
+                                        `Regards,\n${name}`;
+
+                                    const mailtoLink =
+                                        `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
                                     window.location.href = mailtoLink;
                                 });
                             </script>
+
                         </div>
                         <!-- Compiler Output decoration -->
                         <div
